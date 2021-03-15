@@ -1,0 +1,15 @@
+A js (i java i c# i altres llenguatges) posar ++ darrere un número (en aquest cas 'count') es com fer 'count + 1'. Posar - -, lo mateix però count - 1.
+
+Ara a s'exercici de principi tens una variable count, que inicialitza a 0. 
+
+var count = 0;
+
+Aquesta variable está a un scope global. Es a dir, existeix tant dins com fora de sa funció. Es sempre sa mateixa, no hi ha dos count, sino un sol que pots llegir des de on sigui (per algo es global). Es més: es valor de count no se resetetja entre crida i crida a cc(card), cosa que si passaria si count estigues declarat dins sa funció.
+
+Es switch es com fer molts de if agregat. Si t'hi fixes, quan card esta entre 2 i 6,sa funció suma 1 a count. Quan card es entre 7 I 9,sa funció no canvia es valor de count. Quan card es 10,J, Q, K o A, sa funció resta 1 a count.
+
+Al final, sa funció mira si es valor de count és positiu. Si ho és retorna 'Bet'. Si no, retorna 'Hold'. 
+
+Això té sentit perquè count es global (com he explicat abans). És propòsit de s'exercici es aprendre a treballar amb scopes. 
+
+Te deix un article que t'ho explica millor: https://hackernoon.com/understanding-javascript-scope-1d4a74adcdf5 
